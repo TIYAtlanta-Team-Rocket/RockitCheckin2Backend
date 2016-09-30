@@ -6,15 +6,18 @@ package com.tiy.RocketCheckIn;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "userevent")
+@Table(name = "user_event")
 public class UserEvent {
 
     @Id
     @GeneratedValue
     int id;
 
-//    @ManyToMany
-//    User userAtEvents;
+    @ManyToOne
+    User users;
+
+    @ManyToOne
+    Events event;
 
 
 }

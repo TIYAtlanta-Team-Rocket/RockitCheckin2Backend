@@ -15,7 +15,10 @@ public class User {
     Events userEvents;
 
     @Column(nullable = false)
-    String name;
+    String firstName;
+
+    @Column(nullable = false)
+    String lastName;
 
     @Column(nullable = false)
     String password;
@@ -24,7 +27,26 @@ public class User {
     String email;
 
     @Column(nullable = false)
+    String techSkills;
+
+    public String getTechSkills() {
+        return techSkills;
+    }
+
+    public void setTechSkills(String techSkills) {
+        this.techSkills = techSkills;
+    }
+
+    @Column(nullable = true)
     Boolean isAdmin;
+
+    public Events getUserEvents() {
+        return userEvents;
+    }
+
+    public void setUserEvents(Events userEvents) {
+        this.userEvents = userEvents;
+    }
 
     public int getId() {
         return id;
@@ -34,12 +56,20 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPassword() {
@@ -58,4 +88,23 @@ public class User {
         this.email = email;
     }
 
+    public User(String firstName, String lastName, String password, String email, String techSkills, Boolean isAdmin) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.email = email;
+        this.techSkills = techSkills;
+        this.isAdmin = isAdmin;
+    }
+    public User(){
+
+    }
+
+    public Boolean getAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(Boolean admin) {
+        isAdmin = admin;
+    }
 }
