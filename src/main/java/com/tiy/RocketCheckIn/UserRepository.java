@@ -5,5 +5,6 @@ package com.tiy.RocketCheckIn;
  */
 import org.springframework.data.repository.CrudRepository;
 public interface UserRepository extends CrudRepository<User,Integer>{
+ User findByEmailAndPassword(String email, String password);
 
 }
