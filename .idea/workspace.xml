@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10015442-5e48-4d38-9997-c5cf18e8dd00" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/JSONController.class" afterPath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/JSONController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/User.class" afterPath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/Events.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/Events.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/EventsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/EventsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/FriendsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/FriendsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/JSONController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/JSONController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/RocketCheckInApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/RocketCheckInApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEvent.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEventRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="RocketCheckIn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,16 +45,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketCheckInApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/RocketCheckInApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/User.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,11 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketCheckInApplicationTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RocketCheckInApplicationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
               <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -184,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/FriendsRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserRepoistory.java" />
@@ -204,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/JSONController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/Events.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -306,6 +295,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -917,13 +910,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEventRepo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/FriendsRepo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/EventsRepo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/InformationContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1069,6 +1055,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
           <folding />
         </state>
       </provider>
