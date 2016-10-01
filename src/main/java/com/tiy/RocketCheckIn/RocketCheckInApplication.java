@@ -8,5 +8,7 @@ public class RocketCheckInApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RocketCheckInApplication.class, args);
+		JSONController jsonController = new JSONController();
+
 	}
 }

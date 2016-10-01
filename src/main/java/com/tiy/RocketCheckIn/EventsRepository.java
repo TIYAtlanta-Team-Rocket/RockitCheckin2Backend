@@ -5,4 +5,5 @@ package com.tiy.RocketCheckIn;
  */
 import org.springframework.data.repository.CrudRepository;
 public interface EventsRepository extends CrudRepository<Events,Integer>  {
+    Events findByEventName(String eventName);
 }

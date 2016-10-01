@@ -14,10 +14,13 @@ public class UserEvent {
     int id;
 
     @ManyToOne
-    User users;
+    User user;
 
     @ManyToOne
-    Events event;
+    Events events;
 
-
+    public UserEvent(User user, Events events) {
+        this.user = user;
+        this.events = events;
+    }
 }

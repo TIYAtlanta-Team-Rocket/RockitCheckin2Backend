@@ -14,10 +14,10 @@ public class User {
     @ManyToOne
     Events userEvents;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     String firstName;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     String lastName;
 
     @Column(nullable = false)
@@ -26,8 +26,12 @@ public class User {
     @Column(nullable = false, unique = true)
     String email;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     String techSkills;
+
+    @Column(nullable = true)
+    Boolean isAdmin;
+
 
     public String getTechSkills() {
         return techSkills;
@@ -36,9 +40,6 @@ public class User {
     public void setTechSkills(String techSkills) {
         this.techSkills = techSkills;
     }
-
-    @Column(nullable = true)
-    Boolean isAdmin;
 
     public Events getUserEvents() {
         return userEvents;
