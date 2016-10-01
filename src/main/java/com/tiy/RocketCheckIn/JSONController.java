@@ -87,23 +87,23 @@ public class JSONController {
         return returnUser;
     }
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
-    public boolean register(@RequestBody User newUser){
+    public LoginContainer register(@RequestBody User newUser){
         newUser.isAdmin = false;
         users.save(newUser);
         System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
         System.out.println("STOPPP ITTTT");
-//        User sentUser = new User();
-//        User noUser = new User();
-//        noUser = null;
-//        LoginContainer loginContainer;
-//        if(sentUser == null){
-//            loginContainer = new LoginContainer("User Not Created",noUser);
-//        }else{
-//            loginContainer = new LoginContainer(null,sentUser);
-//        }
+        User sentUser = new User();
+        User noUser = new User();
+        noUser = null;
+        LoginContainer loginContainer;
+        if(sentUser == null){
+            loginContainer = new LoginContainer("User Not Created",noUser);
+        }else{
+            loginContainer = new LoginContainer(null,sentUser);
+        }
 
 
-        return true;
+        return loginContainer;
     }
     @RequestMapping(path="/events.json", method = RequestMethod.POST)
     public ArrayList<Events> getEvents(HttpSession session){
