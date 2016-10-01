@@ -5,8 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import sun.jvm.hotspot.asm.Register;
-import sun.rmi.runtime.Log;
+
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
@@ -90,6 +89,7 @@ public class JSONController {
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
     public boolean register(@RequestBody User newUser){
         users.save(newUser);
+        System.out.println("STOPPP ITTTT");
 //        User sentUser = new User();
 //        User noUser = new User();
 //        noUser = null;
@@ -99,6 +99,7 @@ public class JSONController {
 //        }else{
 //            loginContainer = new LoginContainer(null,sentUser);
 //        }
+
 
         return true;
     }

@@ -95,7 +95,7 @@ public class User {
         this.password = password;
         this.email = email;
         this.techSkills = techSkills;
-        this.isAdmin = isAdmin;
+        this.isAdmin = false;
     }
     public User(){
 

@@ -28,21 +28,21 @@ public class RocketCheckInApplicationTests {
 
 	@Test
 	public void registerTest(){
-		String testEmail = "Testemail";
-		String testPassword = "TestPass";
-		String testFirstName = "TestName";
-		String testLastName = "TestLast";
-		String testTechSkills = "TestTechSkills";
-		Boolean isAdmin = false;
-
-		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
-		userRepository.save(testUser);
-		User retrievedUser = userRepository.findOne(testUser.getId());
-		assertEquals(testEmail, retrievedUser.email);
-
-		userRepository.delete(testUser);
-		retrievedUser = userRepository.findOne(testUser.getId());
-		assertNull(retrievedUser);
+//		String testEmail = "Testemail";
+//		String testPassword = "TestPass";
+//		String testFirstName = "TestName";
+//		String testLastName = "TestLast";
+//		String testTechSkills = "TestTechSkills";
+//		Boolean isAdmin = false;
+//
+//		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
+//		userRepository.save(testUser);
+//		User retrievedUser = userRepository.findOne(testUser.getId());
+//		assertEquals(testEmail, retrievedUser.email);
+//
+//		userRepository.delete(testUser);
+//		retrievedUser = userRepository.findOne(testUser.getId());
+//		assertNull(retrievedUser);
 
 	}
 	@Test
@@ -64,27 +64,6 @@ public class RocketCheckInApplicationTests {
 	}
 	@Test
 	public void loginTest(){
-		//Testing if we can find user that already exists
-
-//		String testEmail = "Testemail";
-//		String testPassword = "TestPass";
-//		String testFirstName = "TestName";
-//		String testLastName = "TestLast";
-//		String testTechSkills = "TestTechSkills";
-//		Boolean isAdmin = false;
-//
-//
-//		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
-//		userRepository.save(testUser);
-//
-//		User recievedUser = controller.login(testUser);
-//		assertEquals(testUser.firstName, recievedUser.firstName);
-//
-//		userRepository.delete(testUser);
-//		recievedUser = userRepository.findOne(testUser.getId());
-//		assertNull(recievedUser);
-//
-//
 
 
 	}
