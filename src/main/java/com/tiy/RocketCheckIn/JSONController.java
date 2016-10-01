@@ -89,6 +89,7 @@ public class JSONController {
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
     public boolean register(@RequestBody User newUser){
         users.save(newUser);
+        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
         System.out.println("STOPPP ITTTT");
 //        User sentUser = new User();
 //        User noUser = new User();
