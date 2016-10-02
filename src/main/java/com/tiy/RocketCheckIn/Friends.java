@@ -15,6 +15,9 @@ public class Friends {
     @ManyToOne
     User userfriend;
 
+    @Column
+    boolean hasBeenAdded;
+
 
 
 }

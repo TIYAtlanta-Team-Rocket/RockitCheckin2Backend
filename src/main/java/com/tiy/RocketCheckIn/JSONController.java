@@ -119,6 +119,33 @@ public class JSONController {
         }
         return eventsByUser;
     }
+    @RequestMapping(path="/addFriend.json", method = RequestMethod.POST)
+    public ArrayList<User> addFriend(HttpSession session, @RequestBody Friends friendship){
+        friends.save(friendship);
+        ArrayList<User> myFriends = new ArrayList<>();
+        Iterable<Friends> friendsIterable = friends.findByUser(friendship.user);
+        for (Friends friend: friendsIterable){
+            myFriends.add(friend.userfriend);
+        }
+        return myFriends;
+    }
+    @RequestMapping(path="/confirmAddFriends.json")
+    public boolean confirmAddFriends(ArrayList<Friends> friendships){
+        for (Friends friendship:friendships) {
+            User user1 = friendship.user;
+            User user2 = friendship.userfriend;
+            Friends friendship1 = friends.findOne(user1.id);
+            Friends friendship2 = friends.findOne(user2.id);
+
+            friendship1.hasBeenAdded = true;
+            friendship2.hasBeenAdded = true;
+
+            friends.save(friendship1);
+            friends.save(friendship2);
+        }
+
+        return true;
+    }
 //    @RequestMapping(path="/getuser.json", method = RequestMethod.POST)
 //    public User getUser(HttpSession session){
 //        User getUser = new User();
