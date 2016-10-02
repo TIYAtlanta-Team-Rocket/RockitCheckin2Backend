@@ -69,7 +69,7 @@ public class JSONController {
         return loginContainer;
     }
 
-    @RequestMapping(path="/addEvent.jason", method = RequestMethod.POST)
+    @RequestMapping(path="/addEvent.json", method = RequestMethod.POST)
     public ArrayList<Events> addEvent(HttpSession session, @RequestBody Events newEvent){
         System.out.println("eventName: " + newEvent.eventName + " description: " + newEvent.description + " location: " + newEvent.location + " time: " + newEvent.time);
         events.save(newEvent);
