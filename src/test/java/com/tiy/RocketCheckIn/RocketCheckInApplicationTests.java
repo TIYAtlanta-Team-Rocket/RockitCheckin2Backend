@@ -39,7 +39,7 @@ public class RocketCheckInApplicationTests {
 		String testFirstName = "TestName";
 		String testLastName = "TestLast";
 		String testTechSkills = "TestTechSkills";
-		int isAdmin = 1;
+		boolean isAdmin = true;
 
 		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
 		userRepository.save(testUser);
@@ -75,7 +75,7 @@ public class RocketCheckInApplicationTests {
 		String testFirstName = "TestName";
 		String testLastName = "TestLast";
 		String testTechSkills = "TestTechSkills";
-		int isAdmin = 1;
+		boolean isAdmin = false;
 		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
 
 		userRepository.save(testUser);
@@ -101,7 +101,7 @@ public class RocketCheckInApplicationTests {
 		String testFirstName = "TestName";
 		String testLastName = "TestLast";
 		String testTechSkills = "TestTechSkills";
-		int isAdmin = 1;
+		boolean isAdmin = false;
 		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
 
 		userRepository.save(testUser);
@@ -143,7 +143,7 @@ public class RocketCheckInApplicationTests {
 		String testFirstName = "TestName";
 		String testLastName = "TestLast";
 		String testTechSkills = "TestTechSkills";
-		int isAdmin = 1;
+		boolean isAdmin = false;
 		User testUser = new User(testFirstName,testLastName,testPassword,testEmail,testTechSkills,isAdmin);
 
 		userRepository.save(testUser);
