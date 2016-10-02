@@ -30,45 +30,6 @@ public class JSONController {
     @Autowired
     EventsRepository events;
 
-    @RequestMapping(path = "/addTestData.json", method = RequestMethod.GET)
-    public void addTestData(){
-        User user1 = new User("jill", "stein", "password1", "email1", "techskills info", false);
-        User user2 = new User("bobby", "marley", "password2", "email2", "techskills info", false);
-        User user3 = new User("john", "denver", "password3", "email3", "techskills info", false);
-        users.save(user1);
-        users.save(user2);
-        users.save(user3);
-        Events events1 = new Events("event1", "nowheresville", "a day", "this is event 1");
-        Events events2 = new Events("event2", "nowheresville", "a day", "this is event 2");
-        Events events3 = new Events("event3", "nowheresville", "a day", "this is event 3");
-        events.save(events1);
-        events.save(events2);
-        events.save(events3);
-        User placeHolderUser = users.findByEmailAndPassword("email1", "password1");
-        Events placeHolderEvent = events.findByEventName("event1");
-        UserEvent placeHolderUserEvent = new UserEvent(placeHolderUser, placeHolderEvent);
-        userEvents.save(placeHolderUserEvent);
-        placeHolderUser = users.findByEmailAndPassword("email2", "password2");
-        placeHolderEvent = events.findByEventName("event2");
-        placeHolderUserEvent = new UserEvent(placeHolderUser, placeHolderEvent);
-        userEvents.save(placeHolderUserEvent);
-        placeHolderUser = users.findByEmailAndPassword("email3", "password3");
-        placeHolderEvent = events.findByEventName("event3");
-        placeHolderUserEvent = new UserEvent(placeHolderUser, placeHolderEvent);
-        userEvents.save(placeHolderUserEvent);
-
-        placeHolderUser = users.findByEmailAndPassword("email1", "password1");
-        placeHolderEvent = events.findByEventName("event2");
-        placeHolderUserEvent = new UserEvent(placeHolderUser, placeHolderEvent);
-        userEvents.save(placeHolderUserEvent);
-
-        placeHolderUser = users.findByEmailAndPassword("email2", "password2");
-        placeHolderEvent = events.findByEventName("event1");
-        placeHolderUserEvent = new UserEvent(placeHolderUser, placeHolderEvent);
-        userEvents.save(placeHolderUserEvent);
-
-    }
-
     @RequestMapping(path="/login.json", method = RequestMethod.POST)
     public LoginContainer login(@RequestBody User existUser){
         User returnUser;
