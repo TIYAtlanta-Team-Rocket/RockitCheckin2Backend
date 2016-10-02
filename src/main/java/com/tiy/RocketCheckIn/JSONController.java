@@ -70,27 +70,32 @@ public class JSONController {
     }
 
     @RequestMapping(path="/login.json", method = RequestMethod.POST)
-    public User login(@RequestBody User existUser){
+    public LoginContainer login(@RequestBody User existUser){
         User returnUser;
 
         String password = existUser.password;
         String email = existUser.email;
 
+        LoginContainer payload;
+        String error = null;
         returnUser = users.findByEmailAndPassword(email,password);
-        System.out.println(returnUser.password);
+        if (returnUser == null){
+            error = "Password or email are incorrect please try again.";
+            payload = new LoginContainer(error, returnUser);
+            return payload;
+        }
 
-        System.out.println(existUser.email);
-        System.out.println(existUser.password);
-
-
-
-        return returnUser;
+        payload = new LoginContainer(error, returnUser);
+        return payload;
+//        System.out.println(returnUser.password);
+//        System.out.println(existUser.email);
+//        System.out.println(existUser.password);
     }
+    
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
     public LoginContainer register(@RequestBody User newUser){
         newUser.isAdmin = false;
-        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
-        System.out.println("STOPPP ITTTT");
+//        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
         User noUser = new User();
         noUser = null;
         LoginContainer loginContainer;
