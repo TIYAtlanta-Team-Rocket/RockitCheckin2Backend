@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10015442-5e48-4d38-9997-c5cf18e8dd00" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/JSONController.class" afterPath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/JSONController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/UserEvent.class" afterPath="$PROJECT_DIR$/target/classes/com/tiy/RocketCheckIn/UserEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.class" afterPath="$PROJECT_DIR$/target/test-classes/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEvent.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEventRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/tiy/RocketCheckIn/UserEventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/tiy/RocketCheckIn/RocketCheckInApplicationTests.java" />
-    </list>
+    <list default="true" id="10015442-5e48-4d38-9997-c5cf18e8dd00" name="Default" comment="" />
     <ignored path="RocketCheckIn.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -555,7 +547,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="7" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
