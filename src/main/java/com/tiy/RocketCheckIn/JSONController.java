@@ -87,23 +87,24 @@ public class JSONController {
 
         payload = new LoginContainer(error, returnUser);
         return payload;
-//        System.out.println(returnUser.password);
-//        System.out.println(existUser.email);
-//        System.out.println(existUser.password);
+        System.out.println(existUser.email);
+        System.out.println(existUser.password);
     }
     
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
     public LoginContainer register(@RequestBody User newUser){
         newUser.isAdmin = false;
-//        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
+        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
         User noUser = new User();
         noUser = null;
         LoginContainer loginContainer;
         if(newUser == null){
             loginContainer = new LoginContainer("User Not Created",noUser);
+            System.out.println("error sent with null user");
         }else{
             users.save(newUser);
-            loginContainer = new LoginContainer("user created",newUser);
+            loginContainer = new LoginContainer(null ,newUser);
+            System.out.println("null error sent with existing user");
         }
 
 
