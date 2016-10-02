@@ -29,8 +29,8 @@ public class User {
     @Column(nullable = true)
     String techSkills;
 
-    @Column(nullable = true)
-    Boolean isAdmin;
+    @Column(nullable = false)
+    int isAdmin;
 
 
     public String getTechSkills() {
@@ -89,23 +89,23 @@ public class User {
         this.email = email;
     }
 
-    public User(String firstName, String lastName, String password, String email, String techSkills, Boolean isAdmin) {
+    public User(String firstName, String lastName, String password, String email, String techSkills, int isAdmin) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
         this.techSkills = techSkills;
-        this.isAdmin = false;
+        this.isAdmin = isAdmin;
     }
     public User(){
 
     }
 
-    public Boolean getAdmin() {
+    public int getAdmin() {
         return isAdmin;
     }
 
-    public void setAdmin(Boolean admin) {
+    public void setAdmin(int admin) {
         isAdmin = admin;
     }
 }
