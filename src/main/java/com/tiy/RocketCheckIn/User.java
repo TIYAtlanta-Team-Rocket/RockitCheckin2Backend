@@ -2,7 +2,6 @@ package com.tiy.RocketCheckIn;
 
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -30,7 +29,7 @@ public class User {
     String techSkills;
 
     @Column(nullable = false)
-    boolean isAdmin;
+    boolean adminFlag;
 
 
     public String getTechSkills() {
@@ -89,23 +88,23 @@ public class User {
         this.email = email;
     }
 
-    public User(String firstName, String lastName, String password, String email, String techSkills, boolean isAdmin) {
+    public User(String firstName, String lastName, String password, String email, String techSkills, boolean adminFlag) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
         this.techSkills = techSkills;
-        this.isAdmin = isAdmin;
+        this.adminFlag = adminFlag;
     }
     public User(){
 
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
+    public boolean isAdminFlag() {
+        return adminFlag;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
+    public void setAdminFlag(boolean adminFlag) {
+        this.adminFlag = adminFlag;
     }
 }

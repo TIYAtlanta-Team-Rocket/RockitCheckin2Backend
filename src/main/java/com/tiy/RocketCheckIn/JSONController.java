@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Yehia830 on 9/30/16.
@@ -53,7 +52,7 @@ public class JSONController {
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
     public LoginContainer register(@RequestBody User newUser){
         System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email
-                + " password: " + newUser.password + " isAdmin: " + newUser.isAdmin);
+                + " password: " + newUser.password + " adminFlag: " + newUser.adminFlag);
         User noUser = new User();
         noUser = null;
         LoginContainer loginContainer;
