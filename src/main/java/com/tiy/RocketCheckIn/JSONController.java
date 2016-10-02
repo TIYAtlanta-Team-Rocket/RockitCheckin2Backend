@@ -91,8 +91,8 @@ public class JSONController {
     
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
     public LoginContainer register(@RequestBody User newUser){
-        newUser.isAdmin = false;
-        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email + " password: " + newUser.password);
+        System.out.println("fname: " + newUser.firstName + " lname: " + newUser.lastName + " email: " + newUser.email
+                + " password: " + newUser.password + " isAdmin: " + newUser.isAdmin);
         User noUser = new User();
         noUser = null;
         LoginContainer loginContainer;
