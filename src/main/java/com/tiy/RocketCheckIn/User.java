@@ -101,7 +101,7 @@ public class User {
 
     }
 
-    public boolean getAdmin() {
+    public boolean isAdmin() {
         return isAdmin;
     }
 
