@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.tiy.RocketCheckIn.RocketCheckInApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.197 sec - in com.tiy.RocketCheckIn.RocketCheckInApplicationTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.688 sec - in com.tiy.RocketCheckIn.RocketCheckInApplicationTests

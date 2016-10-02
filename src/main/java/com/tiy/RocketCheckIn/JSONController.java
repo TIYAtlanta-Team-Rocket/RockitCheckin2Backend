@@ -87,8 +87,6 @@ public class JSONController {
 
         payload = new LoginContainer(error, returnUser);
         return payload;
-        System.out.println(existUser.email);
-        System.out.println(existUser.password);
     }
     
     @RequestMapping(path="/register.json", method = RequestMethod.POST)
