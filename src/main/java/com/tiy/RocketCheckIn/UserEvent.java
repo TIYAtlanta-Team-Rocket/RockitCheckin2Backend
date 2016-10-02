@@ -23,4 +23,7 @@ public class UserEvent {
         this.user = user;
         this.events = events;
     }
+
+    public UserEvent() {
+    }
 }

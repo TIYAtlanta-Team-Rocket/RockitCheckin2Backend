@@ -10,5 +10,6 @@ import java.util.ArrayList;
 public interface UserEventRepository extends CrudRepository<UserEvent,Integer> {
     ArrayList<UserEvent> findByUser(User user);
     ArrayList<UserEvent> findByEvents(Events events);
+//    ArrayList<UserEvent> findUsersByEvent(Events event);
 
 }
