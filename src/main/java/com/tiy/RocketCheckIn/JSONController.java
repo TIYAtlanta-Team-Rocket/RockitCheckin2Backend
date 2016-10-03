@@ -92,6 +92,17 @@ public class JSONController {
 
         return eventsArrayList;
     }
+
+    @RequestMapping(path="/eventsget.json", method = RequestMethod.GET)
+    public ArrayList<Events> getEvents2(HttpSession session){
+        ArrayList<Events> eventsArrayList = new ArrayList<>();
+        Iterable<Events> eventsAll = events.findAll();
+        for(Events thisEvent: eventsAll){
+            eventsArrayList.add(thisEvent);
+        }
+
+        return eventsArrayList;
+    }
     @RequestMapping(path="/attendees.json", method = RequestMethod.POST)
     public ArrayList<User> attendess(@RequestBody Events events){
         ArrayList<User> userArrayList = new ArrayList<>();
